@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lauren's Capstone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <script type="text/javascript" src="iscroll.js"></script>
+    <script type="text/javascript" src="demoUtils.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="loaded()">
+    <div class="wrapper">
+        <div class="info-button">
+            <button class="show-popup" onclick="togglePopup()">
+                <h2>?</h2>
+            </button>
+        </div>
+        <div class="main">
+            <div class="popup" id="popup">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+                    <!-- popup content -->
+                    <h1>How to Play</h1>
+                    <p>
+                        Look around and find my momentos. Toggle the index to see all found/missing objects and their descriptions.
+                    </p>
+                </div>
+            </div>
+            <div class="popup popup-2" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="toggleObject1()">&times;</div>
+                    <!-- popup content -->
+                    <div class="popup-main">
+                        <h1>Object 1 Popup</h1>
+                        <p>
+                            Insert text here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup popup-2" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="toggleObject2()">&times;</div>
+                    <!-- popup content -->
+                    <div class="popup-main">
+                        <h1>Object 2 Popup</h1>
+                        <p>
+                            Insert text here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup popup-2" id="popup-3">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="toggleObject3()">&times;</div>
+                    <!-- popup content -->
+                    <div class="popup-main">
+                        <h1>Object 3 Popup</h1>
+                        <p>
+                            Insert text here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup popup-2" id="popup-4">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="toggleObject4()">&times;</div>
+                    <!-- popup content -->
+                    <div class="popup-main">
+                        <h1>Object 4 Popup</h1>
+                        <p>
+                            Insert text here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup popup-2" id="popup-5">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="toggleObject5()">&times;</div>
+                    <!-- popup content -->
+                    <div class="popup-main">
+                        <h1>Object 5 Popup</h1>
+                        <p>
+                            Insert text here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup popup-2" id="popup-6">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="toggleObject6()">&times;</div>
+                    <!-- popup content -->
+                    <div class="popup-main">
+                        <h1>Object 6 Popup</h1>
+                        <p>
+                            Insert text here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup popup-2" id="popup-7">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="toggleObject7()">&times;</div>
+                    <!-- popup content -->
+                    <div class="popup-main">
+                        <h1>Object 7 Popup</h1>
+                        <p>
+                            Insert text here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popup popup-2" id="popup-8">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="toggleObject8()">&times;</div>
+                    <!-- popup content -->
+                    <div class="popup-main">
+                        <h1>Object 8 Popup</h1>
+                        <p>
+                            This is a persimmon, etc etc.
+                    </div>
+                </div>
+            </div>
+            <div class="popup popup-2" id="popup-9">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="toggleObject9()">&times;</div>
+                    <!-- popup content -->
+                    <div class="popup-main">
+                        <h1>Object 9 Popup</h1>
+                        <p>
+                            Insert text here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- begin parallax html -->
+            <div id="wrapper">
+                <div id="scroller">
+                    <img src="object1.png" class="object-all" id="object-1" width=200px onclick="toggleObject1()">
+                    <img src="object2.png" class="object-all" id="object-2" width=200px onclick="toggleObject2()">
+                    <img src="object3.png" class="object-all" id="object-3" width=200px onclick="toggleObject3()">
+                    <img src="object4.png" class="object-all" id="object-4" width=200px onclick="toggleObject4()">
+                    <img src="object5.png" class="object-all" id="object-5" width=200px onclick="toggleObject5()">
+                    <img src="object6.png" class="object-all" id="object-6" width=200px onclick="toggleObject6()">
+                    <img src="object7.png" class="object-all" id="object-7" width=200px onclick="toggleObject7()">
+                    <img src="object8.png" class="object-all" id="object-8" width=200px onclick="toggleObject8()">
+                    <img src="object9.png" class="object-all" id="object-9" width=200px onclick="toggleObject9()">
+                </div>
+            </div>
+
+            <div class="starfield" id="starfield1">
+                <div id="stars1"></div>
+            </div>
+
+            <div class="starfield" id="starfield2">
+                <div id="stars2">
+                </div>
+            </div>
+            <!-- end parallax html -->
+        </div>
+        <button class="side-panel-toggle" type="button">
+            <span class="index-button">
+                <h2>INDEX</h2>
+            </span>
+
+        </button>
+        <div class="side-panel">
+            <!-- This is the side panel content. -->
+            <div class="index-container">
+                <div class="index-item index-item-1">
+                    <div id="object-1-image">
+                        <img src="plane_wireframe.png" alt="plane" class="center">
+                    </div>
+                    <hr>
+                    <div id="object-1-text">
+                        <h2>???</h2>
+                    </div>
+                </div>
+                <div class="index-item index-item-2">
+                    <div id="object-2-image">
+                        <img src="plane_wireframe.png" alt="plane" class="center">
+                    </div>
+                    <hr>
+                    <div id="object-2-text">
+                        <h2>???</h2>
+                    </div>
+                </div>
+                <div class="index-item index-item-3">
+                    <div id="object-3-image">
+                        <img src="plane_wireframe.png" alt="plane" class="center">
+                    </div>
+                    <hr>
+                    <div id="object-3-text">
+                        <h2>???</h2>
+                    </div>
+                </div>
+                <div class="index-item index-item-4">
+                    <div id="object-4-image">
+                        <img src="plane_wireframe.png" alt="plane" class="center">
+                    </div>
+                    <hr>
+                    <div id="object-4-text">
+                        <h2>???</h2>
+                    </div>
+                </div>
+                <div class="index-item index-item-5">
+                    <div id="object-5-image">
+                        <img src="plane_wireframe.png" alt="plane" class="center">
+                    </div>
+                    <hr>
+                    <div id="object-5-text">
+                        <h2>???</h2>
+                    </div>
+                </div>
+                <div class="index-item index-item-6">
+                    <div id="object-6-image">
+                        <img src="plane_wireframe.png" alt="plane" class="center">
+                    </div>
+                    <hr>
+                    <div id="object-6-text">
+                        <h2>???</h2>
+                    </div>
+                </div>
+                <div class="index-item index-item-7">
+                    <div id="object-7-image">
+                        <img src="plane_wireframe.png" alt="plane" class="center">
+                    </div>
+                    <hr>
+                    <div id="object-7-text">
+                        <h2>???</h2>
+                    </div>
+                </div>
+                <div class="index-item index-item-8">
+                    <div id="object-8-image">
+                        <img src="plane_wireframe.png" alt="plane" class="center">
+                    </div>
+                    <hr>
+                    <div id="object-8-text">
+                        <h2>???</h2>
+                    </div>
+                </div>
+                <div class="index-item index-item-9">
+                    <div id="object-9-image">
+                        <img src="plane_wireframe.png" alt="plane" class="center">
+                    </div>
+                    <hr>
+                    <div id="object-9-text">
+                        <h2>???</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>toggleSidePanel()</script>
+</body>
+
+</html>
